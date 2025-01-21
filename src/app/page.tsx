@@ -1,9 +1,13 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import { Description } from "app/components/shared/home/Description";
+import { Hero } from "app/components/shared/home/Hero";
+import { MainProducts } from "app/components/shared/home/MainProducts";
 
 export default function Home() {
-  console.log("Hello World, pagina de inicio")
   return (
-    <h3>Hola</h3>
+    <main>
+      <Hero />
+      <Description />
+      <MainProducts />
+    </main>
   );
 }
